@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Survey Form</title>
+</head>
+<body>
+	<form action="/result" method="post">
+		<div id="name">
+			<label for="name">Your Name: </label>
+			<input type="text" name="name" id="">
+		</div>
+		<div id="location">
+			<label for="location">Twin Peaks Location: </label>
+			<select name="twinpeaks_location">
+			  <option value="Dallas, TX">Dallas, TX</option>
+			  <option value="FT. Worth, TX">FT. Worth, TX</option>
+			  <option value="Sacramento, CA">Sacramento, CA</option>
+			  <option value="Broomfield, CO">Broomfield, CO</option>
+			</select>
+		</div>
+		<div id="language">
+			<label for="language">Favorite Language: </label>
+			<select name="favorite_language">
+			  <option value="Spanish">Spanish</option>
+			  <option value="English">English</option>
+			  <option value="German">German</option>
+			  <option value="Japanese">Japanese</option>
+			</select>
+		</div>
+		<div id="comment">
+			<label for="comment">Comment (optional):</label>
+			<textarea name="comment"></textarea>
+		</div>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
